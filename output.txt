@@ -1,0 +1,45 @@
+deepak@Deepak-HP-ZBook:~$ cd Desktop/FSND-Virtual-Machine/
+deepak@Deepak-HP-ZBook:~/Desktop/FSND-Virtual-Machine$ cd vagrant/
+deepak@Deepak-HP-ZBook:~/Desktop/FSND-Virtual-Machine/vagrant$ ls
+~  catalog  forum  news  newsdata.sql  tournament  Vagrantfile
+deepak@Deepak-HP-ZBook:~/Desktop/FSND-Virtual-Machine/vagrant$ vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'bento/ubuntu-16.04' is up to date...
+==> default: Machine already provisioned. Run `vagrant provision` or use the `--provision`
+==> default: flag to force provisioning. Provisioners marked to run always will still run.
+deepak@Deepak-HP-ZBook:~/Desktop/FSND-Virtual-Machine/vagrant$ vagrant ssh
+Welcome to Ubuntu 16.04.4 LTS (GNU/Linux 4.4.0-75-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+5 packages can be updated.
+0 updates are security updates.
+
+
+The shared directory is located at /vagrant
+To access your shared files: cd /vagrant
+Last login: Sat Jun 16 04:55:16 2018 from 10.0.2.2
+vagrant@vagrant:~$ cd /vagrant/
+vagrant@vagrant:/vagrant$ ls
+~  catalog  forum  news  newsdata.sql  tournament  Vagrantfile
+vagrant@vagrant:/vagrant$ cd news/
+vagrant@vagrant:/vagrant/news$ python news.py
+Most popular 3 articles of all time are:
+
+"Candidate is jerk, alleges rival"--342102 views
+"Bears love berries, alleges bear"--256365 views
+"Bad things gone, say good people"--171762 views
+
+Most popular article authors of all time are:
+
+Ursula La Multa--512805 views
+Rudolf von Treppenwitz--427781 views
+Anonymous Contributor--171762 views
+Markoff Chaney--85387 views
+
+Days when more than 1 percent requests led to errors:
+
+July 17, 2016--2.3% errors
+vagrant@vagrant:/vagrant/news$
