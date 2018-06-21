@@ -1,9 +1,12 @@
+#!/usr/bin/env python
 """ Console Program for log analysis """
-
 import psycopg2
 DBNAME = "news"
 
+
 """Function to get results of select query from news db """
+
+
 def get_db_results(query):
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
@@ -11,6 +14,7 @@ def get_db_results(query):
     results = c.fetchall()
     db.close()
     return results
+
 
 """Following query is for top 3 popular articles """
 query_popular_articles = ''.join([
@@ -39,7 +43,7 @@ query_high_error_rate = ''.join([
                         ' having ROUND(100.0 * (esd.ERR_RATIO),1) > 1;'
                         ])
 
-"""Function utilizing query_popular_articles to get result from news db"""
+
 def get_three_articles():
     articles = get_db_results(query_popular_articles)
     print("Most popular 3 articles of all time are:\n")
@@ -48,7 +52,7 @@ def get_three_articles():
               '"', x[0], '"', '--', str(x[1]), ' views'
               ])
 
-"""Function utilizing query_popular_authors to get result from news db"""
+
 def get_popular_authors():
     authors = get_db_results(query_popular_authors)
     print("\nMost popular article authors of all time are:\n")
@@ -57,7 +61,7 @@ def get_popular_authors():
                       x[0], '--', str(x[1]), ' views'
                       ])
 
-"""Function utilizing query_high_error_rate to get result from news db"""
+
 def get_days_high_error_rate():
     days = get_db_results(query_high_error_rate)
     print("\nDays when more than 1 percent requests led to errors:\n")
@@ -71,5 +75,7 @@ def main():
     get_three_articles()
     get_popular_authors()
     get_days_high_error_rate()
+
+
 if __name__ == "__main__":
     main()
