@@ -1,5 +1,6 @@
 ## Pre-Requisites
-1> Have vagrant installed into your computer from vagrantup.com
+1> Have virtualbox & vagrant installed into your computer. Vagrant can be downloaded
+from vagrantup.com
 
 2> Download and install the VM pre-configured with postgres and other
 important packages such as flask, oauth2client etc from [here](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip)
