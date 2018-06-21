@@ -3,12 +3,12 @@
 2> Download and install the VM pre-configured with postgres from [here]
 (https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip)
 3> Bring the VM online using
-```vagrant up
+``` vagrant up
 ```
 and ssh into the new VM using
-```vagrant ssh
+``` vagrant ssh
 ```
-4> cd into the vagrant folder using ```cd /vagrant```
+4> cd into the vagrant folder using ``` cd /vagrant ```
 5> Create a new folder inside the vagrant folder and call it 'news'.
 6> Download the sql data and unzip it into the vagrant folder from [here] (https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 Load the data into the database using
@@ -35,7 +35,8 @@ group by ERR_DATE;
 ## Running application
 1. cd into the /vagrant/news folder. If you are at the right place you will
 see 2 files inside the folder- news.py, readme.md (this file)
-2.Type the following command on terminal
+
+2. Type the following command on terminal
 
 ```
 python news.py
