@@ -4,9 +4,6 @@ import psycopg2
 DBNAME = "news"
 
 
-"""Function to get results of select query from news db """
-
-
 def get_db_results(query):
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
