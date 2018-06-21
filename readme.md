@@ -56,3 +56,11 @@ python news.py
 ```
 3> The console should display in sequence what questions the
 results are answering and then the results themselves.
+
+### About the solution itself
+
+I've used joins and group by clause to answer the first 2 queries. The reason for this is the
+the data requested was in multiple tables related to each other via foreign key/ primary key.
+The group by was used to aggregate on the count.
+
+For the 3rd question, I first created the view to get the error ratio grouped by day. Then I wrote a select query over this view to get the percentage in order to keep the queries readable.
