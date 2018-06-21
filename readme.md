@@ -21,7 +21,8 @@ cd /vagrant
 \
 6> Download the sql data and unzip it into the vagrant folder from [here] (https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 Load the data into the database using
-``` psql -d news -f newsdata.sql
+```
+psql -d news -f newsdata.sql
 ```
 \
 Ensure that the database has been created successfully and that you can connect
