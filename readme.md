@@ -2,8 +2,7 @@
 1> Have vagrant installed into your computer from vagrantup.com
 
 2> Download and install the VM pre-configured with postgres and other
-important packages such as flask, oauth2client etc from [here]
-(https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip)
+important packages such as flask, oauth2client etc from [here](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip)
 
 3> Bring the VM online using
 ```
@@ -13,14 +12,14 @@ and ssh into the new VM using
 ```
 vagrant ssh
 ```
-4> cd into the vagrant folder using
+4> cd into the vagrant using
 ```
 cd /vagrant
 ```
 
 5> Create a new folder inside the vagrant folder and call it 'news'.
 
-6> Download the sql data and unzip it into the vagrant folder from [here] (https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
+6> Download the sql data and unzip it into the vagrant folder from [here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip).
 Load the data into the database using
 ```
 psql -d news -f newsdata.sql
