@@ -16,8 +16,8 @@ def get_db_results(query):
 """Following query is for top 3 popular articles """
 query_popular_articles = ''.join([
                          'select a.title as title, count(*) as count',
-                         ' from articles a join log b on b.path LIKE \'%\'',
-                         ' ||a.slug|| \'%\'',
+                         ' from articles a join log b on b.path= \'/article/\''
+                         ' ||a.slug',
                          ' group by a.title',
                          ' order by count(*) desc',
                          ' limit 3;'])
@@ -26,7 +26,7 @@ query_popular_articles = ''.join([
 query_popular_authors = ''.join([
                         'select au.name, count(*)',
                         ' from authors au join articles a on au.id = a.author'
-                        ' join log b on b.path LIKE \'%\' ||a.slug|| \'%\''
+                        ' join log b on b.path = \'/article/\' ||a.slug'
                         ' group by au.name'
                         ' order by count(*) desc;'])
 
