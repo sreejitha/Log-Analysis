@@ -39,7 +39,8 @@ NOTE:We are not actually using Flask in this project as there is no user input.
 Psycopg2 is the Postgres Adapter we are using to connect the database with our
 console program written in python.
 
-3> ### Download the code
+3>
+### Download the code
 Clone this repository into the vagrant folder using the github link above
 4> Start the VM using Vagrant:
 From the terminal inside the vagrant subdirectory (which is the directory below
