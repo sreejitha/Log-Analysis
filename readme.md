@@ -99,7 +99,7 @@ because these files are the exact same)
 while running the application or while connecting to the database
 from the terminal, then you can replace  your VagrantFile which is under FSND-Virtual-Machine/vagrant with the one [here]
 (https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
-(using Git clone)
+
 
 ## About the solution itself
 
