@@ -39,7 +39,9 @@ NOTE:We are not actually using Flask in this project as there is no user input.
 Psycopg2 is the Postgres Adapter we are using to connect the database with our
 console program written in python.
 
-3> Start the VM using Vagrant:
+3> ### Download the code
+Clone this repository into the vagrant folder using the github link above
+4> Start the VM using Vagrant:
 From the terminal inside the vagrant subdirectory (which is the directory below
  'FSND-Virtual Machine') type
 ```
@@ -76,10 +78,6 @@ Exit out of psql using the following command on the terminal
 ```
 \q
 ```
-## Downloading Code
-
-1> Clone this repository into the vagrant folder using the github link above
-
 
 ## Running application
 1> Assuming you have followed the steps in Setup and are still logged in into
@@ -103,7 +101,7 @@ from the terminal, then you can replace  your VagrantFile which is under FSND-Vi
 (https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
 (using Git clone)
 
-### About the solution itself
+## About the solution itself
 
 I've used joins and group by clause to answer the first 2 queries. The reason
 for this is the data requested was in multiple tables related to each other
