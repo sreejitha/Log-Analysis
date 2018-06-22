@@ -18,7 +18,7 @@ The questions answered are:
 3> On which days did more than 1% of requests lead to errors?
 
 
-## Setup before running the program
+## Setup before running the application
 1> Have [Virtualbox](https://www.virtualbox.org/wiki/VirtualBox) & [Vagrant](https://www.vagrantup.com/intro/index.html)
 installed into your computer suiting the environment you are running the
 program in. Download links:
