@@ -99,7 +99,7 @@ results are answering and then the results themselves.
 4> If you see some errors related to packages being missing (which shouldn't ideally happen
 because these files are the exact same)
 while running the application or while connecting to the database
-from the terminal, then you can replace  your VagrantFile which is under FSND-Virtual-machine/vagrant with the one [here]
+from the terminal, then you can replace  your VagrantFile which is under FSND-Virtual-Machine/vagrant with the one [here]
 (https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile)
 (using Git clone)
 
